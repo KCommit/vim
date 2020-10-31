@@ -7,6 +7,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'fatih/vim-go'
 	Plug 'sirver/ultisnips'
 	Plug 'matthewsimo/angular-vim-snippets'
+	Plug 'yggdroot/leaderf', {'do':'./install.sh'}
+	Plug 'mattn/emmet-vim'
+	Plug 'cakebaker/scss-syntax.vim'
+	Plug 'ap/vim-css-color'
 call plug#end()
 
 
