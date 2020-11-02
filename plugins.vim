@@ -6,38 +6,42 @@ call plug#begin('~/.vim/plugged')
 	Plug 'valloric/youcompleteme', {'do': './install.py --clangd-completer --go-completer --ts-completer'}
 	Plug 'fatih/vim-go'
 	Plug 'sirver/ultisnips'
-	Plug 'matthewsimo/angular-vim-snippets'
 	Plug 'yggdroot/leaderf', {'do':'./install.sh'}
 	Plug 'mattn/emmet-vim'
 	Plug 'cakebaker/scss-syntax.vim'
 	Plug 'ap/vim-css-color'
+	Plug 'tpope/vim-commentary'
+	Plug 'morhetz/gruvbox'
+	Plug 'chiel92/vim-autoformat'
+	Plug 'w0rp/ale'
 call plug#end()
 
-
+" config airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16' 
+let g:airline_theme = 'minimalist'
 
 
+" config YCM
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_max_num_candidates = 10
-let g:ycm_filetype_blacklist = {
-      \ 'tagbar': 1,
-      \ 'notes': 1,
-      \ 'markdown': 1,
-      \ 'netrw': 1,
-      \ 'unite': 1,
-      \ 'text': 1,
-      \ 'vimwiki': 1,
-      \ 'pandoc': 1,
-      \ 'infolog': 1,
-      \ 'leaderf': 1,
-      \ 'mail': 1
-      \}
 let g:ycm_semantic_triggers = {
-            \ '*': ['re!\w{2}'],
-            \ }
+	\ '*': ['re!\w{2}'],
+	\ }
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_confirm_extra_conf=0
+let g:ycm_seed_identifiers_with_syntax=1
 
- let g:ycm_show_diagnostics_ui = 0
- let g:ycm_confirm_extra_conf=0
- let g:ycm_seed_identifiers_with_syntax=1
+
+" config leaderf
+noremap <c-f> : LeaderfFile<CR>
+
+
+" config emmet
+let g:user_emmet_leader_key=','
+
+
+" config ultisnppet
+let g:UltiSnipsExpandTrigger = "<c-e>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
