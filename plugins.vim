@@ -14,6 +14,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'morhetz/gruvbox'
 	Plug 'chiel92/vim-autoformat'
 	Plug 'w0rp/ale'
+	Plug 'noahfrederick/vim-laravel'
+	Plug 'jwalton512/vim-blade'
+	Plug 'tpope/vim-projectionist'
+	Plug 'noahfrederick/vim-composer'
 call plug#end()
 
 " config airline
@@ -31,6 +35,7 @@ let g:ycm_semantic_triggers = {
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_confirm_extra_conf=0
 let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
 
 
 " config leaderf
