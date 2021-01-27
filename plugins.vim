@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'jwalton512/vim-blade'
 	Plug 'tpope/vim-projectionist'
 	Plug 'noahfrederick/vim-composer'
+	Plug 'shirk/vim-gas'
 call plug#end()
 
 " config airline
@@ -50,3 +51,8 @@ let g:user_emmet_leader_key=','
 let g:UltiSnipsExpandTrigger = "<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
+" config vim-gas"
+let asmsyntac="gas"
+let filetype_inc='gas'
