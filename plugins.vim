@@ -20,6 +20,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'noahfrederick/vim-composer'
 	Plug 'shirk/vim-gas'
 	Plug 'scrooloose/nerdtree'
+	Plug 'justinmk/vim-syntax-extra'
 call plug#end()
 
 " config airline
