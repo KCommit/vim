@@ -27,6 +27,7 @@ call plug#end()
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'minimalist'
+let g:airline#extensions#ale#enabled = 1
 
 
 " config YCM
@@ -58,3 +59,11 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " config vim-gas"
 let asmsyntac="gas"
 let filetype_inc='gas'
+
+
+" config ale
+let g:ale_set_highlights = 0
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚠'
