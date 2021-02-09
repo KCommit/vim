@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'mhinz/vim-startify'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	Plug 'valloric/youcompleteme', {'do': './install.py --clangd-completer --go-completer --ts-completer'}
+	Plug 'valloric/youcompleteme', {'do': './install.py --clang-completer --go-completer --ts-completer --ninja --system-libclang'}
 	Plug 'fatih/vim-go'
 	Plug 'sirver/ultisnips'
 	Plug 'yggdroot/leaderf', {'do':'./install.sh'}
